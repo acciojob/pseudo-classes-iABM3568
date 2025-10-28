@@ -1,1 +1,79 @@
 /*  your css code here. If applicable */
+ /* Set background color for entire page using :root */
+        :root {
+            background-color: rgb(135, 206, 235);
+        }
+
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 0;
+        }
+
+        /* Article styling */
+        article {
+            margin: 0;
+        }
+
+        /* First paragraph - white text on black background */
+        article p:first-child {
+            background-color: black;
+            color: white;
+            padding: 5px 10px;
+            margin: 0;
+        }
+
+        /* Second paragraph - standard text color */
+        article p:nth-child(2) {
+            color: #333;
+            padding: 10px;
+            margin: 0;
+        }
+
+        /* Third paragraph - red text */
+        article p:last-child {
+            color: red;
+            padding: 10px;
+            margin: 0;
+        }
+
+        /* Unordered list styling */
+        ul {
+            list-style-position: inside;
+            margin: 10px;
+        }
+
+        /* All list items - gray background, 50% width, 10px padding */
+        ul li {
+            background-color: gray;
+            width: 50%;
+            padding: 10px;
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+
+        /* Every odd item (1st, 3rd, 5th) - white background */
+        ul li:nth-child(odd) {
+            background-color: white;
+        }
+
+        /* First item - font size 22px */
+        ul li:first-child {
+            font-size: 22px;
+        }
+
+        /* Last item - font size 22px */
+        ul li:last-child {
+            font-size: 22px;
+        }
+
+        /* Third-to-last item (3rd item in a 5-item list) - pink background */
+        ul li:nth-last-child(3) {
+            background-color: pink;
+        }
